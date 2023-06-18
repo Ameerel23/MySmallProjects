@@ -1,0 +1,15 @@
+from sha import db
+
+class Car(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    specification_id = db.Column(
+    car_name = db.Column(db.Text, nullable=False)
+    image_file = db.Column(db.String(50), nullable=False, default='default.jpg')
+    price = db.Column(db.REAL, nullable=False)
+
+    def __repr__(self):
+        return f"Item('{self.name}', '{self.description}', '{self.price}', '{self.footprint_measure}')"
+
+class Specifications(db.Model):
+    specification_id = db.Column(db.Text, nullable=False)
+    
