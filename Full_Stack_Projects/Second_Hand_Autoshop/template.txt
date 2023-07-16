@@ -12,4 +12,11 @@ class Car(db.Model):
 
 class Specifications(db.Model):
     specification_id = db.Column(db.Text, nullable=False)
-    
+
+Database info
+
+
+insert into car("id", "car_name", "image_file", "price")
+values (01, "Mercedes-Benz SLS AMG", "_Frontansicht_geöffnet,_10._August_2011,_Düsseldorf.jpg", 205000)
+, (02, "Ferrari 458 Italia", "2011_Ferrari_458_Italia_DCT_S-A_4.5_Front.jpg", 200000),
+(03, "Mclaren 650S Coupe", "The_frontview_of_McLaren_650S_Coupé.jpg", 195000)
