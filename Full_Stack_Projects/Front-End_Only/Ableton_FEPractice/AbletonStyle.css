@@ -1,7 +1,19 @@
 a:hover{
-    background-color: yellow;
+    color: orange;
 }
 
 a:active{
     color: green;
+}
+
+.sidebyside{
+    float: left;
+    width: 33%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
